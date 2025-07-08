@@ -18,5 +18,120 @@ body {
   margin: 0;
   color: #ffffff;
   min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: black;
 }
 
+.products-featured {
+  margin: 0 auto;
+  padding: 36px 16px;
+}
+
+.products-featured-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  margin: 0 auto 4px;
+}
+
+.products-featured-subtitle {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  margin: 0 auto 32px;
+}
+
+.products-featured-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.products-featured-list::-webkit-scrollbar {
+  width: 71px;
+  height: 1px;
+}
+
+.products-featured-list::-webkit-scrollbar-track {
+  background: #EAEAE8;
+}
+
+.products-featured-list::-webkit-scrollbar-thumb {
+  background: #1D1D1D;
+}
+
+.product-card {
+  margin-bottom: 24px;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.product-image {
+  background-color: #EAEAE8;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+.product-bestseller {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #D9D6B0;
+  padding: 4px 12px;
+  border-radius: 1000px;
+}
+
+.product-favorite-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.product-info {
+  padding: 24px 12px 0;
+}
+
+.product-description {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  margin: 0 0 12px;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+
+
+
+.products-carousel-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.product-arrow-right {
+  position: absolute;
+  top: 40%;
+  right: 16px;
+  cursor: pointer;
+}
