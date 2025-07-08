@@ -1,0 +1,22 @@
+@import url("normalize.css");
+@import url("hero-section.css");
+@import url("header.css");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  color: #ffffff;
+  min-height: 100vh;
+}
+

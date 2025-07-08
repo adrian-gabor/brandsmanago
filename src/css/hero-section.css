@@ -1,0 +1,21 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hero-section-logo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.hero-section-picture {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 24px;
+}

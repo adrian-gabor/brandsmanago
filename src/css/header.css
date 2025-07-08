@@ -1,0 +1,52 @@
+.header {
+    margin: 24px 16px 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.logo-description {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    letter-spacing: -1%;
+}
+
+.logo-image {
+    width: 24x;
+    height: 24px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.navigation-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navigation-description {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    letter-spacing: -1%;    
+}
