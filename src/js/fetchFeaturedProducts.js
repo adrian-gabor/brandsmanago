@@ -61,7 +61,6 @@ function setupCarouselNavigation() {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     fetchProducts();
     setupProductListing();
@@ -96,7 +95,6 @@ function displayProductListing(products) {
     const promoBanner = document.querySelector('.promo-banner');
     if (!productsList) return;
     productsList.innerHTML = '';
-    const productsPerBeforeBanner = 4;
     products.forEach((product, index) => {
         const productCard = document.createElement('li');
         productCard.classList.add('product-card');
@@ -108,8 +106,12 @@ function displayProductListing(products) {
         `;
         productsList.appendChild(productCard);
 
-        if (promoBanner && (index + 1) === productsPerBeforeBanner) {
-            productsList.insertBefore(promoBanner, productCard.nextElementSibling);
+        if (promoBanner) {
+            if (window.matchMedia('(min-width: 1024px)').matches && index === 4) {
+                productsList.appendChild(promoBanner);
+            } else if (window.matchMedia('(max-width: 1023px)').matches && index === 3) {
+                productsList.appendChild(promoBanner);
+            }
         }
     });
 }
