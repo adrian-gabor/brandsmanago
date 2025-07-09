@@ -30,34 +30,23 @@
             <p class="products-featured-subtitle">Browse featured</p>
         </header>
         <div class="products-carousel-container">
-        <ul class="products-featured-list" id="products-list">
-        </ul>
-        <span class="product-arrow-right" id="next-product-btn" aria-label="Następne produkty">
-            <img class="arrow-icon" src="assets/ARROW-RIGHT.svg" alt="Strzałka w prawo"  />
-        </span>
+            <ul class="products-featured-list" id="products-featured-list">
+            </ul>
+            <span class="product-arrow-right" id="next-product-btn" aria-label="Następne produkty">
+                <img class="arrow-icon" src="assets/ARROW-RIGHT.svg" alt="Strzałka w prawo" />
+            </span>
         </div>
     </section>
     <section class="product-listing">
         <div class="product-listing-header">
-            <label for="products-per-page">Number of products per page</label>
-            <select id="products-per-page" name="products-per-page">
+            <label class="product-listing-label" for="products-per-page">Number of products per page</label>
+            <select class="product-listing-select" id="products-per-page" name="products-per-page">
                 <option value="14">14</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
             </select>
-            <img src="assets/Vector.svg" />
         </div>
-        <ul class="products-list">
-            <li class="product-card">
-                <img src="#" alt="#" />
-            </li>
-            <li class="product-card">
-                <img src="#" alt="#" />
-            </li>
-            <li class="product-card">
-                <img src="#" alt="#" />
-            </li>
-            <li class="product-card">
-                <img src="#" alt="#" />
-            </li>
+        <ul class="products-list" id="products-list">
         </ul>
         <div class="promo-banner">
             <img src="#" alt="#" />
