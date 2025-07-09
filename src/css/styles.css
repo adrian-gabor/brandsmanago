@@ -3,11 +3,13 @@
 @import url("header.css");
 @import url("product-featured-section.css");
 @import url("products-list-section.css");
+@import url("navigation.css");
 @import url("variables.css");
 
 html {
 
   box-sizing: border-box;
+  scroll-padding-top: 40px;
   scroll-behavior: smooth;
 }
 
@@ -20,9 +22,8 @@ html {
 
 body {
   margin: 0;
-  color: #ffffff;
+  color: var(--primary-black);
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
-  color: #1D1D1D;
+  font-family: var(--font-family-primary);
 }
 

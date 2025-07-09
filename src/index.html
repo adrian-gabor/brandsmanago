@@ -15,16 +15,27 @@
             <img class="logo-image" src="assets/FORMA-ICON.svg" />
             <span class="logo-description">Forma’sint.</span>
         </span>
-        <nav class="navigation">
-            <img class="navigation-icon" src="assets/ICONS.svg">
-            <span class="navigation-description">MENU</span>
-        </nav>
+        <button class="hamburger" id="hamburger-btn" aria-label="Otwórz menu">
+            <img class="hamburger-icon" src="assets/ICONS.svg">
+            <span class="hamburger-description">Menu
+        </button>
     </header>
-    <section class="hero-section">
+    <nav class="navigation" id="side-menu" aria-label="Menu nawigacji">
+            <div class="navigation-header">
+                <img class="logo-image" src="assets/FORMA-ICON.svg" />
+                <button class="navigation-close-btn" id="close-menu-btn" aria-label="Zamknij menu">
+                    <img src="assets/CROSS.svg">Close
+                </button>
+            </div>
+            <a class="navigation__link" href="#home-section">Home</a>
+            <a class="navigation__link" href="#featured-products-section">Featured Products</a>
+            <a class="navigation__link" href="#product-listing-section">Product Listing</a>
+        </nav>
+    <section class="hero-section" id="home-section">
         <img class="hero-section-logo" src="assets/LOGO-FORMA.svg" alt="Forma'sint logo graficzne - duże" />
         <img class="hero-section-picture" src="assets/HERO-PHOTO.png" alt="Wspinaczka górska - dynamiczne ujęcie" />
     </section>
-    <section class="products-featured">
+    <section class="products-featured" id="featured-products-section">
         <header class="products-featured-header">
             <h2 class="products-featured-title">Featured products</h2>
             <h1 class="products-featured-subtitle">Browse featured</h1>
@@ -37,7 +48,7 @@
             </span>
         </div>
     </section>
-    <section class="product-listing">
+    <section class="product-listing" id="product-listing-section">
         <div class="product-listing-header">
             <label class="product-listing-label" for="products-per-page">Number of products per page</label>
             <select class="product-listing-select" id="products-per-page" name="products-per-page">

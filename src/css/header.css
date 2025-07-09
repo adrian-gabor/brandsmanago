@@ -1,7 +1,10 @@
 .header {
-    margin: 24px 16px 88px;
+    padding: 24px 16px 0;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: var(--primary-white);
+    width: 100%;
 }
 
 .logo {
@@ -21,7 +24,9 @@
     height: 24px;
 }
 
-.navigation {
+.hamburger {
+    background: none;
+    border: none;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -29,12 +34,13 @@
     cursor: pointer;
 }
 
-.navigation-icon {
+.hamburger-icon {
+
     width: 24px;
     height: 24px;
 }
 
-.navigation-description {
+.hamburger-description {
     font: var(--text-style-body);
-    text-transform: var(--text-transform-body);  
+    text-transform: var(--text-transform-body);
 }

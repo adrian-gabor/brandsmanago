@@ -21,5 +21,9 @@
     --font-weight-special-product: 500;
     --font-size-special-product: 8px;
     --line-height-special-product: 140%;
-    --text-transform-special-product: uppercase;        
+    --text-transform-special-product: uppercase;
+    
+    --primary-black: #1D1D1D;
+    --primary-white: #FFFFFF;
+    --primary-green: #EAEAE8;
 }
