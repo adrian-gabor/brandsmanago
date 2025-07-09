@@ -1,6 +1,6 @@
 async function fetchProducts() {
     const pageNumber = 1;
-    const pageSize = 5;
+    const pageSize = 10;
     const apiUrl = `https://brandstestowy.smallhost.pl/api/random?pageNumber=${pageNumber}&pageSize=${pageSize}`;
 
     try {
@@ -34,7 +34,7 @@ function displayProducts(products) {
                 </span>
             </div>
             <div class="product-info">
-                <p class="product-description">Dark blue alpine climbing jacket</p>
+                <span class="product-description">Dark blue alpine climbing jacket</span>
                 <span class="product-price">€259,99 EUR</span> 
             </div>
         `;
@@ -130,5 +130,5 @@ function closeMenu() {
 hamburgerBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
 sideMenu.addEventListener('click', function (e) {
-    if (e.target.classList.contains('navigation__link')) closeMenu();
+    if (e.target.classList.contains('navigation-link')) closeMenu();
 });

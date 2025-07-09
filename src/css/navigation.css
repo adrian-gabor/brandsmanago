@@ -55,7 +55,7 @@
     text-transform: var(--text-transform-body);
 }
 
-.navigation__link {
+.navigation-link {
     text-decoration: none;
     color: var(--primary-black);
     font: var(--text-style-body);

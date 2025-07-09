@@ -26,4 +26,25 @@
     --primary-black: #1D1D1D;
     --primary-white: #FFFFFF;
     --primary-green: #EAEAE8;
+    --bestseller: #D9D6B0;
+    --limited-edition: #D4B0D9;
+
+
+    --text-style-header-desktop: var(--font-weight-header-desktop) var(--font-size-header-desktop) / var(--line-height-header-desktop) var(--font-family-primary); 
+    --font-weight-header-desktop: 700;
+    --font-size-header-desktop: 42px;
+    --line-height-header-desktop: 120%;
+
+    --text-style-body-large-desktop: var(--font-weight-body-large-desktop) var(--font-size-body-large-desktop) / var(--line-height-body-large-desktop) var(--font-family-primary);
+    --font-weight-body-large-desktop: 600;
+    --font-size-body-large-desktop: 20px;
+    --line-height-body-large-desktop: 120%;
+
+    --text-style-body-desktop: var(--font-weight-body-desktop) var(--font-size-body-desktop) / var(--line-height-body-desktop) var(--font-family-primary);
+    --font-weight-body-desktop: 500;
+    --font-size-body-desktop: 16px;
+    --line-height-body-desktop: 140%;
+    --text-transform-body-desktop: uppercase;
+
+
 }

@@ -12,9 +12,41 @@
     height: auto;
 }
 
-.hero-section-picture {
+.hero-section-picture-mobile {
     width: 100%;
     max-width: 600px;
     height: auto;
     margin-top: 24px;
+}
+
+.hero-section-picture {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 168px 42px 0;
+}
+
+.hero-section-logo {
+    width: 100%;
+    max-width: 918px;
+    height: auto;
+}
+
+
+.hero-section-picture-mobile {
+    display: none;
+}
+
+.hero-section-picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+}
+
 }

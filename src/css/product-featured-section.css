@@ -1,17 +1,16 @@
 .products-featured {
-  margin: 0 auto;
   padding: 36px 16px 32px;
 }
 
 .products-featured-title {
   font: var(--text-style-body);
   text-transform: var(--text-transform-body);
-  margin: 0 auto 4px;
+  margin-bottom: 4px;
 }
 
 .products-featured-subtitle {
   font: var(--text-style-header);
-  margin: 0 auto 32px;
+  margin-bottom: 32px;
 }
 
 .products-featured-list {
@@ -56,9 +55,8 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
+  font: var(--text-style-body-desktop);
+  text-transform: var(--text-transform-body-desktop);
   background-color: #D9D6B0;
   padding: 4px 12px;
   border-radius: 1000px;
@@ -69,15 +67,19 @@
   top: 16px;
   right: 16px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 
 .product-info {
+  display: flex;
+  flex-direction: column;
   padding: 24px 12px 0;
 }
 
 .product-description {
   font: var(--text-style-body-large);
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 }
 
 .product-price {
@@ -95,4 +97,66 @@
   top: 40%;
   right: 16px;
   cursor: pointer;
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+  .products-featured {
+    padding: 96px 42px;
+  }
+
+  .products-featured-title {
+    font: var(--text-style-body-desktop);
+    text-transform: var(--text-transform-body-desktop);
+    margin-bottom: 4px;
+  }
+
+  .products-featured-subtitle {
+    font: var(--text-style-header);
+    margin-bottom: 42px;
+  }
+
+  .products-featured-list {
+    gap: 24px;
+
+  }
+
+
+  .product-featured-card {
+    margin-bottom: 64px;
+  }
+
+  .product-featured-image {
+    background-color: #EAEAE8;
+    border-radius: 6px;
+    width: 441px;
+    height: 441px;
+  }
+
+  .product-description {
+    font: var(--text-style-body-large-desktop);
+  }
+
+  .product-price {
+    font: var(--text-style-body-desktop);
+  }
+
+  .products-carousel-container {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .product-arrow-right {
+    right: 32px;
+  }
+
+  .arrow-icon {
+    width: 72px;
+    height: 72px;
+  }
+
 }

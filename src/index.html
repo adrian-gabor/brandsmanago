@@ -14,26 +14,37 @@
         <span class="logo">
             <img class="logo-image" src="assets/FORMA-ICON.svg" />
             <span class="logo-description">Forma’sint.</span>
+            <span class="company-name">IdomMods&lt;/&gt;</span>
+        </span>
+        <nav class="navigation-container">
+            <a class="navigation-link" href="#home-section">Home</a>
+            <a class="navigation-link" href="#featured-products-section">Featured Products</a>
+            <a class="navigation-link" href="#product-listing-section">Product Listing</a>
+        </nav>
+        <span class="user-container">
+            <img class="user-icon" src="assets/USER.svg" alt="Ikona użytkownika" />
+            <span class="user-name">Frontend Developer</span>
         </span>
         <button class="hamburger" id="hamburger-btn" aria-label="Otwórz menu">
             <img class="hamburger-icon" src="assets/ICONS.svg">
-            <span class="hamburger-description">Menu
+            <span class="hamburger-description">Menu</span>
         </button>
     </header>
     <nav class="navigation" id="side-menu" aria-label="Menu nawigacji">
-            <div class="navigation-header">
-                <img class="logo-image" src="assets/FORMA-ICON.svg" />
-                <button class="navigation-close-btn" id="close-menu-btn" aria-label="Zamknij menu">
-                    <img src="assets/CROSS.svg">Close
-                </button>
-            </div>
-            <a class="navigation__link" href="#home-section">Home</a>
-            <a class="navigation__link" href="#featured-products-section">Featured Products</a>
-            <a class="navigation__link" href="#product-listing-section">Product Listing</a>
-        </nav>
+        <div class="navigation-header">
+            <img class="logo-image" src="assets/FORMA-ICON.svg" />
+            <button class="navigation-close-btn" id="close-menu-btn" aria-label="Zamknij menu">
+                <img src="assets/CROSS.svg">Close
+            </button>
+        </div>
+        <a class="navigation-link" href="#home-section">Home</a>
+        <a class="navigation-link" href="#featured-products-section">Featured Products</a>
+        <a class="navigation-link" href="#product-listing-section">Product Listing</a>
+    </nav>
     <section class="hero-section" id="home-section">
         <img class="hero-section-logo" src="assets/LOGO-FORMA.svg" alt="Forma'sint logo graficzne - duże" />
         <img class="hero-section-picture" src="assets/HERO-PHOTO.png" alt="Wspinaczka górska - dynamiczne ujęcie" />
+        <img class="hero-section-picture-mobile" src="assets/HERO-PHOTO-MOBILE.png" alt="Wspinaczka górska - dynamiczne ujęcie" />
     </section>
     <section class="products-featured" id="featured-products-section">
         <header class="products-featured-header">
@@ -60,7 +71,8 @@
         <ul class="products-list" id="products-list">
         </ul>
         <div class="promo-banner">
-            <img src="assets/BANNER.png" alt="#" />
+            <img class="promo-banner-image" src="assets/BANNER.png" alt="#" />
+            <img class="promo-banner-image-mobile" src="assets/BANNER-MOBILE.png" alt="#" />
         </div>
     </section>
     <script src="/src/js/fetchFeaturedProducts.js"></script>
