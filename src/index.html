@@ -12,7 +12,8 @@
 <body>
     <header class="header">
         <span class="logo">
-            <img class="logo-image" src="assets/FORMA-ICON.svg" />
+            <img class="logo-image logo-image-outline" src="assets/FORMA-ICON.svg" />
+            <img class="logo-image logo-image-fill" src="assets/FORMA-ICON-Fill.svg"/>
             <span class="logo-description">Forma’sint.</span>
             <span class="company-name">IdomMods&lt;/&gt;</span>
         </span>
@@ -75,6 +76,14 @@
             <img class="promo-banner-image-mobile" src="assets/BANNER-MOBILE.png" alt="#" />
         </div>
     </section>
+    <!-- Popup modal for enlarged product image -->
+    <div id="product-modal" class="product-modal">
+        <div class="product-modal-backdrop"></div>
+        <div class="product-modal-content">
+            <button class="product-modal-close" id="product-modal-close" aria-label="Zamknij">&times;</button>
+            <img id="product-modal-image" src="" alt="Powiększone zdjęcie produktu" />
+        </div>
+    </div>
     <script src="/src/js/fetchFeaturedProducts.js"></script>
 </body>
 

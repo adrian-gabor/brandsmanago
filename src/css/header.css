@@ -21,8 +21,19 @@
 }
 
 .logo-image {
-    width: 24x;
+    width: 24px;
     height: 24px;
+}
+
+.logo-image-fill {
+    display: none;
+}
+
+.logo:hover .logo-image-outline {
+    display: none;
+}
+.logo:hover .logo-image-fill {
+    display: inline;
 }
 
 .company-name {
