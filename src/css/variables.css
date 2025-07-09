@@ -1,0 +1,25 @@
+:root {
+     --font-family-primary: "Inter", sans-serif;
+
+    --text-style-header: var(--font-weight-header) var(--font-size-header) / var(--line-height-header) var(--font-family-primary);
+    --font-weight-header: 700;
+    --font-size-header: 32px;
+    --line-height-header: 120%;
+
+    --text-style-body-large: var(--font-weight-body-large) var(--font-size-body-large) / var(--line-height-body-large) var(--font-family-primary);
+    --font-weight-body-large: 600;
+    --font-size-body-large: 18px;
+    --line-height-body-large: 120%;
+
+    --text-style-body: var(--font-weight-body) var(--font-size-body) / var(--line-height-body) var(--font-family-primary); 
+    --font-weight-body: 500;
+    --font-size-body: 16px;
+    --line-height-body: 140%;
+    --text-transform-body: uppercase;
+
+    --text-style-special-product: var(--font-weight-special-product) var(--font-size-special-product) / var(--line-height-special-product) var(--font-family-primary);
+    --font-weight-special-product: 500;
+    --font-size-special-product: 8px;
+    --line-height-special-product: 140%;
+    --text-transform-special-product: uppercase;        
+}

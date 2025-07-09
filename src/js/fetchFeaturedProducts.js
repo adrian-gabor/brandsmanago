@@ -103,6 +103,7 @@ function displayProductListing(products) {
         productCard.innerHTML = `
             <div class="product-image-container">
                 <img class="product-image" src="${product.image}" alt="${product.text}" />
+                <span class="product-id">ID: ${product.id} </span>
             </div>
         `;
         productsList.appendChild(productCard);

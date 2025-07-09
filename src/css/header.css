@@ -12,12 +12,8 @@
 }
 
 .logo-description {
-    font-style: medium;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-transform: uppercase;
-    letter-spacing: -1%;
+    font: var(--text-style-body);
+    text-transform: var(--text-transform-body);
 }
 
 .logo-image {
@@ -39,10 +35,6 @@
 }
 
 .navigation-description {
-    font-style: medium;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-transform: uppercase;
-    letter-spacing: -1%;    
+    font: var(--text-style-body);
+    text-transform: var(--text-transform-body);  
 }
