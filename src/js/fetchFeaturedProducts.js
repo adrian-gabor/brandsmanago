@@ -93,9 +93,11 @@ async function fetchProductListing(pageSize) {
 
 function displayProductListing(products) {
     const productsList = document.querySelector('.products-list');
+    const promoBanner = document.querySelector('.promo-banner');
     if (!productsList) return;
     productsList.innerHTML = '';
-    products.forEach(product => {
+    const productsPerBeforeBanner = 4;
+    products.forEach((product, index) => {
         const productCard = document.createElement('li');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
@@ -104,5 +106,9 @@ function displayProductListing(products) {
             </div>
         `;
         productsList.appendChild(productCard);
+
+        if (promoBanner && (index + 1) === productsPerBeforeBanner) {
+            productsList.insertBefore(promoBanner, productCard.nextElementSibling);
+        }
     });
 }
