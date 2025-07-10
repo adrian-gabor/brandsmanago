@@ -1,5 +1,11 @@
 import { fetchProducts } from './api.js';
 
+const productModal = document.getElementById('product-modal');
+const productModalImage = document.getElementById('product-modal-image');
+const productModalCloseBtn = document.getElementById('product-modal-close');
+const productModalBackdrop = document.querySelector('.product-modal-backdrop');
+const productModalId = document.getElementById('product-modal-id');
+
 export function setupProductListing() {
     const select = document.getElementById('products-per-page');
     if (!select) return;
@@ -7,6 +13,20 @@ export function setupProductListing() {
     select.addEventListener('change', (e) => {
         fetchProductListing(parseInt(e.target.value, 10));
     });
+
+    if (productModalCloseBtn) {
+        productModalCloseBtn.addEventListener('click', closeProductModal);
+    }
+    if (productModalBackdrop) {
+        productModalBackdrop.addEventListener('click', closeProductModal);
+    }
+    if (productModal) {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && productModal.classList.contains('open')) {
+                closeProductModal();
+            }
+        });
+    }
 }
 
 /**
@@ -43,8 +63,9 @@ function displayProductListing(products) {
                 <img class="product-image" src="${product.image}" alt="${product.text}" />
                 <span class="product-id">ID: ${product.id} </span>
             </div>
-        `;
+            `;
         productsList.appendChild(productCard);
+        productCard.addEventListener('click', () => openProductModal(product));
 
         if (promoBanner) {
             if (window.matchMedia('(min-width: 1024px)').matches && index === 4) {
@@ -54,4 +75,23 @@ function displayProductListing(products) {
             }
         }
     });
+}
+
+/**
+ * Otwiera modal produktu i wypełnia go danymi.
+ * @param {Object} product - Obiekt produktu do wyświetlenia w modalu
+ */
+function openProductModal(product) {
+    productModalImage.src = product.image;
+    productModalId.textContent = `ID: ${product.id}`;
+    productModal.classList.add('open');
+    document.body.classList.add('modal-open');
+}
+
+/**
+ * Zamyka modal produktu
+ */
+function closeProductModal() {
+    productModal.classList.remove('open');
+    document.body.classList.remove('modal-open');
 }
