@@ -25,7 +25,7 @@
 
 .products-featured-list::-webkit-scrollbar {
   width: 71px;
-  height: 1px;
+  height: 2px;
 }
 
 .products-featured-list::-webkit-scrollbar-track {

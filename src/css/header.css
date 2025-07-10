@@ -9,15 +9,23 @@
 }
 
 .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo-container {
     display: flex;
     align-items: center;
     gap: 12px;
-    flex-direction: row;
 }
 
 .logo-description {
     font: var(--text-style-body);
     text-transform: var(--text-transform-body);
+    text-decoration: none;
+    color: var(--primary-black);
 }
 
 .logo-image {
@@ -107,6 +115,8 @@
 
     .company-name {
     display: flex;
+    color: var(--primary-black);
+    text-decoration: none;
     font: var(--text-style-body-desktop);
     text-transform: var(--text-transform-body-desktop);
 }
