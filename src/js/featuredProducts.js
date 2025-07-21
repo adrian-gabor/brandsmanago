@@ -1,4 +1,4 @@
-import heartIconPath from 'url:../assets/FAV-FILL.svg';
+import heartIconPath from '../assets/FAV-FILL.svg';
 /**
  * Wyświetla produkty w karuzeli "Featured Products".
  * @param {Array} products - Tablica produktów do wyświetlenia w karuzeli.
