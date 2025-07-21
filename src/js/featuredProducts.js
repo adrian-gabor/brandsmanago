@@ -3,7 +3,6 @@ import heartIcon from 'url:../assets/FAV-FILL.svg';
  * Wyświetla produkty w karuzeli "Featured Products".
  * @param {Array} products - Tablica produktów do wyświetlenia w karuzeli.
  */
-console.log('Ścieżka do ikony po przetworzeniu przez Parcel:', heartIcon);
 export function displayFeaturedProducts(products) {
     const productsList = document.getElementById('products-featured-list');
 
