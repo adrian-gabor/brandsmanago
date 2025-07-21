@@ -8,7 +8,7 @@ async function e(e,t){let a=`https://brandstestowy.smallhost.pl/api/random?pageN
                 <img class="product-featured-image" src="${e.image}" alt="${e.text}" />
                 <span class="product-bestseller">Bestseller</span>
                 <span class="product-favorite-btn" aria-label="Dodaj do ulubionych">
-                    <img class="heart-icon" src="${{}}" alt="Serduszko"/> 
+                    <img class="heart-icon" src="../assets/FAV-FILL.svg" alt="Serduszko"/> 
                 </span>
             </div>
             <div class="product-info">
@@ -16,4 +16,4 @@ async function e(e,t){let a=`https://brandstestowy.smallhost.pl/api/random?pageN
                 <span class="product-price">\u{20AC}259,99 EUR</span> 
             </div>
         `,t.appendChild(a)}),function(){let e=document.getElementById("products-featured-list"),t=document.getElementById("next-product-btn");t&&e&&t.addEventListener("click",()=>{let t=e.querySelector(".product-featured-card"),a=parseFloat(getComputedStyle(e).gap)||0,d=t?t.offsetWidth+a:e.offsetWidth;e.scrollBy({left:d,behavior:"smooth"})})}()}catch(e){console.error("Błąd ładowania produktów do karuzeli w DOMContentLoaded:",e)}function o(){i.classList.remove("open"),document.body.classList.remove("menu-open")}r.addEventListener("click",function(){i.classList.add("open"),document.body.classList.add("menu-open")}),l.addEventListener("click",o),i.addEventListener("click",function(e){e.target.classList.contains("navigation-link")&&o()});let u=document.getElementById("products-per-page");u&&(c(parseInt(u.value,10)),u.addEventListener("change",e=>{c(parseInt(e.target.value,10))}),d&&d.addEventListener("click",s),n&&n.addEventListener("click",s),t&&document.addEventListener("keydown",e=>{"Escape"===e.key&&t.classList.contains("open")&&s()}))});
-//# sourceMappingURL=brandsmanago.483fa629.js.map
+//# sourceMappingURL=brandsmanago.8492f0fd.js.map
