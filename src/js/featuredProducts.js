@@ -1,3 +1,4 @@
+const heartIcon = new URL('../assets/FAV-FILL.svg', import.meta.url).href; 
 /**
  * Wyświetla produkty w karuzeli "Featured Products".
  * @param {Array} products - Tablica produktów do wyświetlenia w karuzeli.
@@ -15,6 +16,7 @@ export function displayFeaturedProducts(products) {
                 <img class="product-featured-image" src="${product.image}" alt="${product.text}" />
                 <span class="product-bestseller">Bestseller</span>
                 <span class="product-favorite-btn" aria-label="Dodaj do ulubionych">
+                    <img class="heart-icon" src="${heartIcon}" alt="Serduszko"/> 
                 </span>
             </div>
             <div class="product-info">

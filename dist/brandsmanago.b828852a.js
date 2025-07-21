@@ -130,7 +130,7 @@
 
   // Only insert newRequire.load when it is actually used.
   // The code in this file is linted against ES5, so dynamic import is not allowed.
-  // INSERT_LOAD_HERE
+  function $parcel$resolve(url) {  url = importMap[url] || url;  return import.meta.resolve(distDir + url);}newRequire.resolve = $parcel$resolve;
 
   Object.defineProperty(newRequire, 'root', {
     get: function () {
@@ -685,12 +685,13 @@ document.addEventListener('DOMContentLoaded', async ()=>{
 });
 
 },{"./featuredProducts.js":"2ArIM","./api.js":"4yEOZ","./productListing.js":"bbQd9","./hamburgerMenu.js":"lLNkX"}],"2ArIM":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
 /**
  * Wyświetla produkty w karuzeli "Featured Products".
  * @param {Array} products - Tablica produktów do wyświetlenia w karuzeli.
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "displayFeaturedProducts", ()=>displayFeaturedProducts);
+ */ parcelHelpers.export(exports, "displayFeaturedProducts", ()=>displayFeaturedProducts);
+const heartIcon = new URL(require("56827a42d7098dc2")).href;
 function displayFeaturedProducts(products) {
     const productsList = document.getElementById('products-featured-list');
     productsList.innerHTML = '';
@@ -702,6 +703,7 @@ function displayFeaturedProducts(products) {
                 <img class="product-featured-image" src="${product.image}" alt="${product.text}" />
                 <span class="product-bestseller">Bestseller</span>
                 <span class="product-favorite-btn" aria-label="Dodaj do ulubionych">
+                    <img class="heart-icon" src="${heartIcon}" alt="Serduszko"/> 
                 </span>
             </div>
             <div class="product-info">
@@ -729,7 +731,10 @@ function displayFeaturedProducts(products) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"56827a42d7098dc2":"3PIbn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3PIbn":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("FAV-FILL.a3486a0c.svg") + "?" + Date.now();
+
+},{}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -882,6 +887,6 @@ function setupHamburgerMenu() {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["93v64","lhpGb"], "lhpGb", "parcelRequire5f26", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["93v64","lhpGb"], "lhpGb", "parcelRequire5f26", {}, "./", "/")
 
 //# sourceMappingURL=brandsmanago.b828852a.js.map
