@@ -141,7 +141,7 @@ body.modal-open {
 
 @media (min-width: 1024px) {
   .product-listing {
-    padding: 42px;
+    padding: 42px 28px;
   }
 
   .product-listing-header {
